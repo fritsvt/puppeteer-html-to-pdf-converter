@@ -1,0 +1,23 @@
+{
+  "name": "puppeteer-pdf-generator",
+  "version": "1.0.0",
+  "description": "A pdf generator rest api which generates it's pdfs using the a headless chrome instance powered by Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "Frits van Turnhout",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-slow-down": "^1.3.1",
+    "express-validator": "^6.1.1",
+    "multer": "^1.4.2",
+    "puppeteer": "^1.19.0"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
