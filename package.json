@@ -1,7 +1,7 @@
 {
-  "name": "puppeteer-pdf-generator",
+  "name": "puppeteer-html-to-converter",
   "version": "1.0.0",
-  "description": "A pdf generator rest api which generates it's pdfs using the a headless chrome instance powered by Puppeteer",
+  "description": "A html to pdf converter rest api which generates it's pdfs using the a headless chrome instance powered by Puppeteer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

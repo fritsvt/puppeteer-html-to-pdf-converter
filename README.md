@@ -1,8 +1,8 @@
-# Puppeteer PDF generator REST api
+# Puppeteer HTML to PDF converter REST api
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-This is a pdf generator rest api which generates pdfs using the headless chrome instance powered by [Puppeteer](https://github.com/GoogleChrome/puppeteer).
+This is a html to pdf converter rest api which converts web pages to pdfs using the headless chrome instance powered by [Puppeteer](https://github.com/GoogleChrome/puppeteer).
 
 Live api base url: https://gentle-reaches-67283.herokuapp.com
 
@@ -65,11 +65,11 @@ Aside from the option to deploy this project on Heroku the instruction below is 
 
 1. Clone the repo
 ```
-git clone https://github.com/fritsvt/puppeteer-pdf-generator.git
+git clone https://github.com/fritsvt/puppeteer-html-to-pdf-converter.git
 ```
 2. Navigate in the project directory
 ```
-cd puppeteer-pdf-generator
+cd puppeteer-html-to-pdf-converter
 ```
 3. Install the npm dependencies
 ```
@@ -87,9 +87,13 @@ npm run start
 
 ## Technologies
 [puppeteer](https://github.com/GoogleChrome/puppeteer)
+
 [expressjs](https://github.com/expressjs/express)
+
 [express-slow-down](https://github.com/nfriedly/express-slow-down)
+
 [express-validator](https://github.com/express-validator/express-validator)
+
 [multer](https://github.com/expressjs/multer)
 
 ## Contributing
