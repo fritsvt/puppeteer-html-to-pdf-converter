@@ -2,6 +2,7 @@ const express = require('express')
 const config = require('./config.js');
 const bodyParser = require('body-parser');
 const multer = require('multer');
+const cors = require('cors')
 const slowDown = require("express-slow-down");
 const upload = multer();
 let app = express()
@@ -13,7 +14,7 @@ require('./puppeteer');
 require('./purge_expired');
 
 if (config('TRUST_PROXY')) { // only if you're behind a reverse proxy (Heroku, Bluemix, AWS if you use an ELB, custom Nginx setup, etc)
-	app.enable("trust proxy");
+    app.enable("trust proxy");
 }
 
 const speedLimiter = slowDown({
@@ -22,7 +23,7 @@ const speedLimiter = slowDown({
   delayMs: config('RATE_LIMIT_DELAY_MS')
 });
 
-
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(upload.array());

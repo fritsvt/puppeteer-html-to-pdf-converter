@@ -10,6 +10,7 @@ Live api base url: https://immense-citadel-73637.herokuapp.com/
 ### `POST /generate`
 
 **Parameters**
+
 The api doesn't care much how you send the parameters. Wether it's form-data form-urlencoded or as raw json. It's all welcome here.
 
 | Parameter | Type | Description |
@@ -33,6 +34,7 @@ The api doesn't care much how you send the parameters. Wether it's form-data for
 | `preferCSSPageSize` | `boolean` | **Optional**. Give any CSS `@page` size declared in the page priority over what is declared in `width` and `height` or `format` options. Defaults to `false`, which will scale the content to fit the paper size |
 
 **Response**
+
 If the request was succesful the response will look like this:
 ```
 {
@@ -93,6 +95,8 @@ npm run start
 [express-slow-down](https://github.com/nfriedly/express-slow-down)
 
 [express-validator](https://github.com/express-validator/express-validator)
+
+[cors](https://github.com/expressjs/cors)
 
 [multer](https://github.com/expressjs/multer)
 

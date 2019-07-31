@@ -3,3 +3,4 @@ config.json
 .idea
 .DS_Store
 package-lock.json
+static/exports
