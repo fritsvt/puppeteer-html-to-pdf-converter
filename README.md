@@ -17,20 +17,20 @@ The api doesn't care much how you send the parameters. Wether it's form-data for
 | `url` | `string` | **Required if no html**. The url of the webpage to convert to pdf |
 | `html` | `string` | **Required if no url**. The html to convert to pdf |
 | `scale` | `string` | **Optional**. Scale of the webpage rendering. Defaults to 1. Scale amount must be between 0.1 and 2 |
-| `displayHeaderFooter` | `boolean` | Display header and footer. Defaults to `false ` |
-| `headerTemplate` | `string` | HTML template for the print header. Should be valid HTML markup with following classes used to inject printing values into them: `date`, `title`, `url`, `pageNumber`, `totalPages` |
-| `footerTemplate` | `string` | HTML template for the print footer. Should use the same format as the `headerTemplate` |
-| `printBackground` | `boolean` | Print background graphics. Defaults to `false` |
-| `landscape` | `boolean` | Paper orientation. Defaults to `false` |
-| `pageRanges` | `string` | Paper ranges to print, e.g., '1-5, 8, 11-13'. Defaults to the empty string, which means print all pages |
-| `format` | `string` | Paper format. If set, takes priority over width or height options. Defaults to 'Letter' |
-| `width` | `integer` | Paper width, accepts values labeled with units |
-| `height` | `integer` | Paper height, accepts values labeled with units |
-| `margin.top` | `integer` | Top margin, accepts values labeled with units |
-| `margin.right` | `integer` | Right margin, accepts values labeled with units |
-| `margin.bottom` | `integer` | Bottom margin, accepts values labeled with units |
-| `margin.left` | `integer` | Left margin, accepts values labeled with units |
-| `preferCSSPageSize` | `boolean` | Give any CSS `@page` size declared in the page priority over what is declared in `width` and `height` or `format` options. Defaults to `false`, which will scale the content to fit the paper size |
+| `displayHeaderFooter` | `boolean` | **Optional**. Display header and footer. Defaults to `false ` |
+| `headerTemplate` | `string` | **Optional**. HTML template for the print header. Should be valid HTML markup with following classes used to inject printing values into them: `date`, `title`, `url`, `pageNumber`, `totalPages` |
+| `footerTemplate` | `string` | **Optional**. HTML template for the print footer. Should use the same format as the `headerTemplate` |
+| `printBackground` | `boolean` | **Optional**. Print background graphics. Defaults to `false` |
+| `landscape` | `boolean` | **Optional**. Paper orientation. Defaults to `false` |
+| `pageRanges` | `string` | **Optional**. Paper ranges to print, e.g., '1-5, 8, 11-13'. Defaults to the empty string, which means print all pages |
+| `format` | `string` | **Optional**. Paper format. If set, takes priority over width or height options. Defaults to 'Letter' |
+| `width` | `integer` | **Optional**. Paper width, accepts values labeled with units |
+| `height` | `integer` | **Optional**. Paper height, accepts values labeled with units |
+| `margin.top` | `integer` | **Optional**. Top margin, accepts values labeled with units |
+| `margin.right` | `integer` | **Optional**. Right margin, accepts values labeled with units |
+| `margin.bottom` | `integer` | **Optional**. Bottom margin, accepts values labeled with units |
+| `margin.left` | `integer` | **Optional**. Left margin, accepts values labeled with units |
+| `preferCSSPageSize` | `boolean` | **Optional**. Give any CSS `@page` size declared in the page priority over what is declared in `width` and `height` or `format` options. Defaults to `false`, which will scale the content to fit the paper size |
 
 **Response**
 If the request was succesful the response will look like this:
