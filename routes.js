@@ -2,7 +2,7 @@ const { check } = require('express-validator');
 
 module.exports.register = function(app) {
 
-	app.get('/', (req, res) => res.send(`Welcome! Please see check <a href="https://github.com/fritsvt/puppeteer-pdf-generator">here</a> if you're looking for the api docs`))
+	app.get('/', (req, res) => res.send(`Welcome! Please see check <a href="https://github.com/fritsvt/puppeteer-html-to-pdf-converter">here</a> if you're looking for the api docs`))
 	app.post('/generate', [
 		check('url').isURL({require_valid_protocol: true, allow_protocol_relative_urls: false, require_tld: true}).optional(),
 		check('html').optional(),
