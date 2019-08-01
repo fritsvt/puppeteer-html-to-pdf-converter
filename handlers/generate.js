@@ -7,7 +7,7 @@ const expiresIn = config('EXPIRES_IN');
 module.exports = async function(req, res) {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(200).json({
+        return res.status(422).json({
             success: true,
             errors: errors
         });
