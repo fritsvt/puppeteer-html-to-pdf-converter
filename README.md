@@ -49,15 +49,13 @@ If one of the parameters was invalid the request will look something like:
 ```
 {
     "success": true,
-    "errors": {
-        "errors": [
-            {
-                "msg": "Must provide either url or html",
-                "param": "url_html",
-                "location": "body"
-            }
-        ]
-    }
+    "errors": [
+        {
+            "msg": "Must provide either url or html",
+            "param": "url_html",
+            "location": "body"
+        }
+    ]
 }
 ```
 

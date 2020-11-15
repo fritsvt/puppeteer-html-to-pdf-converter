@@ -3,6 +3,7 @@ const config = require('./config');
 const expiresIn = config('EXPIRES_IN');
 
 purgeExpired();
+
 setInterval( () => {
     purgeExpired();
 }, config('EXPIRE_CHECK_INTERVAL') * 1000);
