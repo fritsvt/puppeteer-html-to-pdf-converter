@@ -4,8 +4,6 @@
 
 This is a html to pdf converter rest api which converts web pages to pdfs using the headless chrome instance powered by [Puppeteer](https://github.com/GoogleChrome/puppeteer).
 
-Live api base url: https://immense-citadel-73637.herokuapp.com/
-
 ## Usage
 ### `POST /generate`
 
@@ -48,7 +46,7 @@ If the request was succesful the response will look like this:
 If one of the parameters was invalid the request will look something like:
 ```
 {
-    "success": true,
+    "success": false,
     "errors": [
         {
             "msg": "Must provide either url or html",
