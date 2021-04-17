@@ -43,7 +43,7 @@ module.exports = async function(req, res) {
     }
 
     if (!global.browser) {
-        const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
+        global.browser = await puppeteer.launch({ args: ['--no-sandbox'] })
     }
     const page = await global.browser.newPage();
     if (req.body.url) {
